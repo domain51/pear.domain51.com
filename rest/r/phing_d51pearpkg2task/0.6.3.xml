@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/phing_d51pearpkg2task">Phing_d51PearPkg2Task</p>
+    <c>pear.domain51.com</c>
+    <v>0.6.3</v>
+    <st>alpha</st>
+    <l>LGPL</l>
+    <m>tswicegood</m>
+    <s>An alternative to phing's default pearpkg2</s>
+    <d>
+            	
+                This package provides an alternative to phing's
+            	bundled pearpkg2, allowing for a build script 
+            	that more closely resembles a real 
+            	package.xml2.0 file or using the API that is 
+            	available by using PEAR_PackageFileManager2.
+            </d>
+    <da>2010-08-30 11:26:56</da>
+    <n>
+Fixes a few internal issues:
+
+* Fixes an issue where setOptions() fails and
+  it doesn't complain.
+* Update the internal the build.xml file to
+  work with its new Git home.
+* Remove recommended_version against PEAR since
+  the original implementor in PEAR doesn't have
+  a clue how that should have really worked.
+ </n>
+    <f>16587</f>
+    <g>http://pear.domain51.com//get/Phing_d51PearPkg2Task-0.6.3</g>
+    <x xlink:href="package.0.6.3.xml"/>
+</r>

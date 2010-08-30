@@ -6,5 +6,23 @@
         <name>http://pear.domain51.com/</name>
     </author>
 
-
+    <entry>
+        <title>Phing_d51PearPkg2Task 0.6.3 (alpha)</title>
+        <link href="http://pear.domain51.com//get/Phing_d51PearPkg2Task-0.6.3.tgz" />
+        <id>Phing_d51PearPkg2Task-0.6.3</id>
+        <author>
+            <name>tswicegood</name>
+        </author>
+        <updated>2010-08-30T11:26:56-05:00</updated>
+        <content>
+            
+            	
+                This package provides an alternative to phing's
+            	bundled pearpkg2, allowing for a build script 
+            	that more closely resembles a real 
+            	package.xml2.0 file or using the API that is 
+            	available by using PEAR_PackageFileManager2.
+            
+        </content>
+    </entry>
 </feed>

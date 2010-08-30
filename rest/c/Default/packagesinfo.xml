@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <f xmlns="http://pear.php.net/dtd/rest.categorypackageinfo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.categorypackageinfo     http://pear.php.net/dtd/rest.categorypackageinfo.xsd">
+    <pi>
+        <p>
+            <n>Phing_d51PearPkg2Task</n>
+            <c>pear.domain51.com</c>
+            <ca xlink:href="/rest/c/Default">Default</ca>
+            <l>LGPL</l>
+            <s>An alternative to phing's default pearpkg2</s>
+            <d>
+            	
+                This package provides an alternative to phing's
+            	bundled pearpkg2, allowing for a build script 
+            	that more closely resembles a real 
+            	package.xml2.0 file or using the API that is 
+            	available by using PEAR_PackageFileManager2.
+            </d>
+            <r xlink:href="/rest/r/phing_d51pearpkg2task" />
+        </p>
 
+        <a>
+            <r>
+                <v>0.6.3</v>
+                <s>alpha</s>
+            </r>
+
+        </a>
+
+        <deps>
+            <v>0.6.3</v>
+            <d>a:1:{s:8:"required";a:3:{s:3:"php";a:1:{s:3:"min";s:5:"5.2.0";}s:13:"pearinstaller";a:1:{s:3:"min";s:5:"1.6.0";}s:7:"package";a:3:{s:4:"name";s:23:"PEAR_PackageFileManager";s:7:"channel";s:12:"pear.php.net";s:3:"min";s:5:"1.6.0";}}}</d>
+        </deps>
+
+    </pi>
 </f>

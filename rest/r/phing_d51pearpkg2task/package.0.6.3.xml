@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Phing_d51PearPkg2Task</name>
+ <channel>pear.domain51.com</channel>
+ <summary>An alternative to phing&apos;s default pearpkg2</summary>
+ <description>
+            	
+                This package provides an alternative to phing&apos;s
+            	bundled pearpkg2, allowing for a build script 
+            	that more closely resembles a real 
+            	package.xml2.0 file or using the API that is 
+            	available by using PEAR_PackageFileManager2.
+            </description>
+ <lead>
+  <name>Travis Swicegood</name>
+  <user>tswicegood</user>
+  <email>travis@domain51.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-30</date>
+ <time>11:26:56</time>
+ <version>
+  <release>0.6.3</release>
+  <api>1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+ <notes>
+Fixes a few internal issues:
+
+* Fixes an issue where setOptions() fails and
+  it doesn&apos;t complain.
+* Update the internal the build.xml file to
+  work with its new Git home.
+* Remove recommended_version against PEAR since
+  the original implementor in PEAR doesn&apos;t have
+  a clue how that should have really worked.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="b0d5c8882bfeecf137293dc986134fce" name="phing/tasks/ext/d51PearPkg2Task.php" role="php" />
+   <file baseinstalldir="/" md5sum="eafbddfd732b92873926dfbc012c85cd" name="phing/tasks/ext/d51PearPkg2Task/Changelog.php" role="php" />
+   <file baseinstalldir="/" md5sum="563d6d984c497b827583fb84f860542e" name="phing/tasks/ext/d51PearPkg2Task/Dependencies.php" role="php" />
+   <file baseinstalldir="/" md5sum="76aca68eb49f20a94df9406217add975" name="phing/tasks/ext/d51PearPkg2Task/Description.php" role="php" />
+   <file baseinstalldir="/" md5sum="19ea40cdf01cab3928c306af150c04bc" name="phing/tasks/ext/d51PearPkg2Task/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="6a49d38d69bde1ce95d5a4fd4d946b81" name="phing/tasks/ext/d51PearPkg2Task/Frontend.php" role="php" />
+   <file baseinstalldir="/" md5sum="fc4493ad8a2ff55f0f35ada23e66b944" name="phing/tasks/ext/d51PearPkg2Task/KeyedContainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="2ed40b1451f01f2761f3863f5111770a" name="phing/tasks/ext/d51PearPkg2Task/License.php" role="php" />
+   <file baseinstalldir="/" md5sum="8ebfe4a9524bbe92354ca051407e43bb" name="phing/tasks/ext/d51PearPkg2Task/Maintainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="5f012ce4132c02a8a1570c773938d2cd" name="phing/tasks/ext/d51PearPkg2Task/Release.php" role="php" />
+   <file baseinstalldir="/" md5sum="c73289772b48d023eda3258e76f7f5e2" name="phing/tasks/ext/d51PearPkg2Task/Replacement.php" role="php" />
+   <file baseinstalldir="/" md5sum="a4883a8131a1071c1faf77e074680952" name="phing/tasks/ext/d51PearPkg2Task/Stability.php" role="php" />
+   <file baseinstalldir="/" md5sum="cd981f5fc3755286538dc1bae35afc51" name="phing/tasks/ext/d51PearPkg2Task/TextContainer.php" role="php" />
+   <file baseinstalldir="/" md5sum="d94f5cecc5c2700e8d9d4f3f4b10dd03" name="phing/tasks/ext/d51PearPkg2Task/Version.php" role="php" />
+   <file baseinstalldir="/" md5sum="cf3336bc285ee769a708cc66b0b4037b" name="phing/tasks/ext/d51PearPkg2Task/Dependencies/Extension.php" role="php" />
+   <file baseinstalldir="/" md5sum="cc4e45ee86f8428671b1eb91ea7b8c38" name="phing/tasks/ext/d51PearPkg2Task/Dependencies/Group.php" role="php" />
+   <file baseinstalldir="/" md5sum="48105ef33c50f6b38a7bc2dee80e3c9b" name="phing/tasks/ext/d51PearPkg2Task/Dependencies/Package.php" role="php" />
+   <file baseinstalldir="/" md5sum="aabdeb391becff8588fd3338137d9fbd" name="phing/tasks/ext/d51PearPkg2Task/Dependencies/PEAR.php" role="php" />
+   <file baseinstalldir="/" md5sum="2b18c43242174e743a3fcf2b9945c642" name="phing/tasks/ext/d51PearPkg2Task/Dependencies/PHP.php" role="php" />
+   <file baseinstalldir="/" md5sum="bf7e049eeb9af7c9343e46f5a61d389c" name="phing/tasks/ext/d51PearPkg2Task/Release/Install.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.6.0</min>
+   </pearinstaller>
+   <package>
+    <name>PEAR_PackageFileManager</name>
+    <channel>pear.php.net</channel>
+    <min>1.6.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.6.3</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-08-30</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+Fixes a few internal issues:
+
+* Fixes an issue where setOptions() fails and
+  it doesn&apos;t complain.
+* Update the internal the build.xml file to
+  work with its new Git home.
+* Remove recommended_version against PEAR since
+  the original implementor in PEAR doesn&apos;t have
+  a clue how that should have really worked.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.6.2.1</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-10-19</date>
+   <license>LGPL</license>
+   <notes>
+Fix issue introduced by previous &quot;fix&quot;
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.6.2</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-10-19</date>
+   <license>LGPL</license>
+   <notes>
+Bug fix release.
+                
+                * default minimum PEAR version to current PEAR
+                * default minimum PHP version to current PHP
+                * adds logging output for both
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.6.1</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-09-08</date>
+   <license>LGPL</license>
+   <notes>
+Rebuilt release to insure Frontend.php was
+                included in tarball.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.6</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-09-01</date>
+   <license>LGPL</license>
+   <notes>
+The following changes were made:
+        		
+            	* allow setting of &quot;type&quot; attribute at main
+        		package.  If not specified, type is php.
+            	* redirects all output from the PEAR package
+            	generator directly to phing logs.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.5</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-08-22</date>
+   <license>LGPL</license>
+   <notes>
+The following changes were made:
+                
+                * Add in ability to set PHP and PEAR version
+                dependencies.
+                * Make PHP minimum version default to the
+                current PHP version.
+                * Make PEAR minimum version default to the
+                current PEAR version
+                * Rename &quot;exclude_version&quot; to
+                &quot;exclude_versions&quot; and make it comma separated
+                so you can specify multiple versions to exclude.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.4</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-08-09</date>
+   <license>LGPL</license>
+   <notes>
+Add in dependency on PEAR_PackageFileManager so
+                this will work once installed.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.3</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-08-04</date>
+   <license>LGPL</license>
+   <notes>
+Adds new Release and Replacement objects.  Both
+                still need tweaking, but basic functionality is
+                there.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.2</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-07-19</date>
+   <license>LGPL</license>
+   <notes>
+Adds new Description object to allow for more
+                flexibility and removes the hackish means of
+                removing leading spaces within the
+                &lt;description&gt; element.  Two new attributes
+                have been added:
+                
+                * &quot;indention_type&quot; which should be either tab
+                  or space.  This defaults to space, and any
+                  value other than &quot;tab&quot; will result in spaces
+                  being used.
+                * &quot;indentions_to_remove&quot; which specifies the
+                  number of tabs or spaces to remove.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2.1</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-07-19</date>
+   <license>LGPL</license>
+   <notes>
+Fixes type in dir_roles generation that kept
+                them from properly being added.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.2</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-07-06</date>
+   <license>LGPL</license>
+   <notes>
+Release 0.2 adds in the following undocumented
+                features:
+                * &lt;dependencies&gt; element for handling basic
+                  dependencies (see Domain51_Cache for usage
+                  examples)
+                * &lt;changelog&gt; element for handling changelog
+                  entries
+                * &lt;notes&gt; element now not required if a
+                  &lt;changelog&gt; element with the same version
+                  is present.
+                * &lt;notes&gt; only strip off preceding soft and
+                  hard tabs.  Soft-tabs are assumed to be 4
+                  spaces.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1</release>
+    <api>1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2007-06-27</date>
+   <license>LGPL</license>
+   <notes>
+Initial release of package
+   </notes>
+  </release>
+ </changelog>
+</package>
