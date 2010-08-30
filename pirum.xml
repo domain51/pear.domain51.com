@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server>
+  <name>pear.domain51.com</name>
+  <summary>Domain51 PEAR channel</summary>
+  <alias>pirum</alias>
+  <url>http://pear.domain51.com/</url>
+</server>
+
