@@ -2,7 +2,7 @@
 <server>
   <name>pear.domain51.com</name>
   <summary>Domain51 PEAR channel</summary>
-  <alias>pirum</alias>
+  <alias>domain51</alias>
   <url>http://pear.domain51.com/</url>
 </server>
 
